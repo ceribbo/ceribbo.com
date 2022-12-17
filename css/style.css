@@ -57,10 +57,6 @@ table   {
         right: 6%;
         bottom: 17%;
     }
-    .spotify    {
-        right: 14%;
-        top: 10%;
-    }
     .watch    {
         left: 50%;
         bottom: 8%;
@@ -83,10 +79,6 @@ table   {
     .info    {
         right: 6%;
         bottom: 18%;
-    }
-    .spotify    {
-        right: 7%;
-        top: 17%;
     }
     .watch    {
         left: 42%;
@@ -197,6 +189,12 @@ button.trakt  {
 }
 .trakt-icon {
     background-image: url(../images/trakt.png);
+}
+button.spotify  {
+    background: #13cd5b;
+}
+.spotify-icon {
+    background-image: url(../images/spotify.png);
 }
 button.linkedin  {
     background: #007bb5;

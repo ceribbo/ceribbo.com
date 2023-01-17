@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  background: #b61924;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 1000px) {
+    .header {
+        padding-top: 0px;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 20vw !important; 
+    }
+}
+
+@media (max-width: 1300px) {
+    table {
+        border-spacing: 0 7px !important;
+    }
+    .tablet-desktop {
+        margin-top: 15px;
+    }
+    h2 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .general-professional {
+        margin-top: 40px;
+    }
+}
+
+h2  {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+text  {
+    /*font-size: 17px;*/
+}
+
+table   {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+
+
+  .title,.char1,.char2,.char3,.char4,.char5,.char6,.char7,.char8,.char9 {
+    white-space: nowrap;
+    font-family: 'Fjalla One', sans-serif;
+    transform: skew(-10deg);
+    display: inline-block;
+    text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px;
+  }
+
+
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 9em;
+    line-height: 80px;
+    letter-spacing: 2px;
+    z-index: 3;
+}
+
+.title{
+  transform: rotate(-10deg);
+  display: block;
+
+  span {
+    transform: skew(-10deg);
+    display: block;
+    text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
+    min-width: 10px;
+    min-height: 10px;
+  }
+}
+
+
+/*immagine centrale */
+.my-image   {
+    height: 250px;
+    width: 250px;
+    margin-left: 25px;
+    margin-right: 25px;
+    transform: translate(0px, 0px);
+
+    border:4px solid #eda643;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    z-index: 3;
+}
+
+@-webkit-keyframes flash {
+    0% { opacity: .3; }
+    100% { opacity: 1; }
+   }
+   @keyframes flash {
+    0% { opacity: .3; }
+    100% { opacity: 1; }
+   }
+   .flash {
+    opacity: 1;
+    -webkit-animation: flash 1s;
+    animation: flash 1s;
+   }
+   
+
+
+.leader-line {
+    transform: translate(0px, 0px);
+    z-index: 2;
+}
+
+.general
+{
+   width:100%;
+   height: 100%;
+   position: relative;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general-img {
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    z-index: 3;
+}
+
+.general-img:hover {
+    -webkit-filter: drop-shadow(10px 10px 10px #222);
+    filter: drop-shadow(10px 10px 10px #222);
+}
+
+.tablet-img {
+    max-height: 70%;
+}
+
+
+.general-text
+{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.laptop-text {
+    width: 79%;
+}
+
+.professional-text {
+    margin-top: -40px;
+    width: 60%;
+}
+
+
+
+/* card e box */
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    /*position: absolute;
+    max-width: 400px;*/
+    transform: translate(0px, 0px);
+
+  }
+  
+  
+  .classic-box    {
+      margin: 2em;
+      text-align: center;
+  }
+  
+  
+  
+  /* titolo */
+  .title-container{
+    /*transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;*/
+    display: block;
+    position: relative;
+    max-width: 300px;
+  }
+
+/* follow button */
+button {
+    border-radius: 500px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 11px;
+    min-width: 92px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 10px 0 0;
+    /*float: left;*/
+
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+button:hover {
+    opacity: 0.8;
+}
+.bt-icon {
+    background-position: 0 0;
+    content: "";
+    display: inline-block;
+    height: 17px;
+    position: absolute;
+    top: 3px;
+    width: 17px;
+    left: 3px;
+    background-size: contain;
+}
+
+.bt-text {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-left: 13px;
+    padding: 4px 4px 1px 8px;
+    -webkit-font-smoothing: antialiased;
+}
+
+button.trakt  {
+    background: #ed2224;
+}
+.trakt-icon {
+    background-image: url(../images/trakt.png);
+}
+button.spotify  {
+    background: #13cd5b;
+}
+.spotify-icon {
+    background-image: url(../images/spotify.png);
+}
+button.linkedin  {
+    background: #007bb5;
+}
+.linkedin-icon {
+    background-image: url(../images/linkedin.png);
+}
+button.facebook  {
+    background: #3f67a9;
+}
+.facebook-icon {
+    background-image: url(../images/facebook.png);
+}
+button.instagram  {
+    background: #f71b5b;
+}
+.instagram-icon {
+    background-image: url(../images/instagram.png);
+}
+button.twitter  {
+    background: #00adef;
+}
+.twitter-icon {
+    background-image: url(../images/twitter.png);
+}
+button.youtube  {
+    background: #ca3737;
+}
+.youtube-icon {
+    background-image: url(../images/youtube.png);
+}
+button.skype  {
+    background: #00aaf1;
+}
+.skype-icon {
+    background-image: url(../images/skype.png);
+}
+button.curriculum  {
+    background: #407b65;
+}
+.curriculum-icon {
+    background-image: url(../images/curriculum.png);
+}
+button.github  {
+    background: #000000;
+}
+.github-icon {
+    background-image: url(../images/github.png);
+}
+button.blog  {
+    background: #407b65;
+}
+.blog-icon {
+    background-image: url(../images/curriculum.png);
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+[data-entrance] { visibility: hidden; }

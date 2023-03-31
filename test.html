@@ -3,19 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Giacomo Ceribelli</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
   <script src="js/jquery.lettering-0.6.min.js"></script>
 
   <link rel="stylesheet" href="css/style-test.css">
   <script src="js/scroll-entrance.js"></script>
   <script src="js/leader-line.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+  <link rel="shortcut icon" href="favicon.ico">
 
 
 </head>
@@ -25,8 +31,7 @@
 
 
   <div class="header">
-    <div class="row">
-      <div class="row" style="margin: auto;">
+      <div class="row d-flex align-items-center justify-content-center" style="margin: auto;">
         <h1>
           <span class="title">Giacomo</span>
         </h1>
@@ -35,14 +40,12 @@
           <span class="title">Ceribelli</span>
         </h1>
       </div>
-    </div>
   </div>
 
-  <!-- Photo Grid -->
-  <div class="row">
-    <div class="column">
-      <div class="general">
-        <img src="./images/tablet.png" class="general-img tablet-img" id="social" />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <img src="./images/tablet-1.png" class="general-img tablet-img" id="social" />
         <div class="general-text">
           <h2 class="tablet-desktop">Social Networks</h2>
           <table width="100%">
@@ -86,40 +89,38 @@
           </table>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="general">
-        <img src="./images/laptop.png" class="general-img" id="interests" />
-        <div class="general-text laptop-text">
+      <div class="col-md-5 d-flex align-items-center justify-content-center">
+        <img src="./images/laptop-1.png" class="general-img" id="interests" />
+        <div class="general-text">
           <h2>My Interests</h2>
-          <table width="100%">
+          <table class="table-tablet">
             <!--<li>If you are interested in visiting my old blog it is available <a href="/blog">here</a>.</li>-->
             <tr>
-              <td>• &emsp; Since childhood, I have always been attracted to computers, today I can realize my dream by
+              <td>• Since childhood, I have always been attracted 
+                to computers, today I can realize my dream by
                 working in the field of information technology.</td>
             </tr>
             <tr>
-              <td>• &emsp; I love sailing! Every summer I dedicate myself to sailing in the Mediterranean sea with
+              <td>• I love sailing! Every summer I dedicate myself 
+                to sailing around the Mediterranean sea with
                 friends.</td>
             </tr>
             <tr>
-              <td>• &emsp; Lately, I've gotten into motorcycling, in fact I love to ride my Yamaha Ténéré 700 around
+              <td>• Lately, I've gotten into motorcycling, in fact I love to 
+                ride my Yamaha Ténéré 700 around
                 Italy.</td>
             </tr>
           </table>
         </div>
       </div>
-    </div>
-
-    <div class="column">
-      <div class="general general-professional">
-        <img src="./images/desktop.png" class="general-img" id="professional" />
-        <div class="general-text professional-text">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <img src="./images/desktop-1.png" class="general-img desktop-img" id="professional" />
+        <div class="general-text">
           <h2 class="tablet-desktop">Professional Figure</h2>
           <table width="100%">
             <tr>
               <td>Current Job</td>
-              <td colspan="2"><b>Technology Advisory Digital Architect at <a target=”_blank” href="https://www.accenture.com/">Accenture
+              <td colspan="2"><b>Technology Advisory Digital <br>Architect at <a target=”_blank” href="https://www.accenture.com/">Accenture
                     S.p.A.</a></b></td>
             </tr>
             <tr>
@@ -148,21 +149,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <script>
 
@@ -175,8 +162,8 @@
     }
 
     var animations = function() {
-      var timer1 = 4000,
-        timer2 = 8000,
+      var timer1 = 8000,
+        timer2 = 4000,
         timer3 = 12000;
 
       setTimeout(function () { updateMe("./images/me2.gif"); }, timer1);

@@ -114,7 +114,7 @@ h1{
 
 .title{
   transform: rotate(-10deg);
-  display: block;
+  display: flex;
   z-index: 3;
 
   span {

@@ -281,7 +281,7 @@ h1{
 
 .title{
   transform: translateX(-50%) rotate(-10deg);
-  display: block;
+  display: flex;
   float: left;
   left: 50%;
   position: relative;
